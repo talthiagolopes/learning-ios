@@ -26,3 +26,5 @@ Quizzler: https://github.com/appbrewery/Quizzler-iOS13
 Destini: https://github.com/appbrewery/c-iOS13
 
 BMI Calculator: https://github.com/appbrewery/BMI-Calculator-iOS13
+
+Tipsy: https://github.com/appbrewery/Tipsy-iOS13.git
