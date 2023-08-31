@@ -13,6 +13,7 @@ import Foundation
     the API is providing, please, just keep mapping as the examples below
  */
 
+//Decodable, Codable = Decodable & Encodable
 struct WeatherData: Codable {
     let name: String
     let main: Main
