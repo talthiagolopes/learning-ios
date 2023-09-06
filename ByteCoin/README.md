@@ -10,7 +10,7 @@ In order to get your api key you need: Go to Pricing menu -> Free option -> Clic
 
 Request example
 ```bash
-GET https://rest.coinapi.io/v1/exchangerate/BTC/BRL?apikey=<<yout-api-key>>
+GET https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=<<yout-api-key>>
 ```
 
 Response example
