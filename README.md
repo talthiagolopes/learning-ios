@@ -30,3 +30,5 @@ BMI Calculator: https://github.com/appbrewery/BMI-Calculator-iOS13
 Tipsy: https://github.com/appbrewery/Tipsy-iOS13.git
 
 Clima: https://github.com/appbrewery/Clima-iOS13.git
+
+ByteCoin: https://github.com/appbrewery/ByteCoin-iOS13
