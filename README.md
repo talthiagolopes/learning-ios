@@ -32,3 +32,5 @@ Tipsy: https://github.com/appbrewery/Tipsy-iOS13.git
 Clima: https://github.com/appbrewery/Clima-iOS13.git
 
 ByteCoin: https://github.com/appbrewery/ByteCoin-iOS13
+
+Flash-Chat: https://github.com/appbrewery/Flash-Chat-iOS13.git
