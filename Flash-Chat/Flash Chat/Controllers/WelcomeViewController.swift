@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         //Cocoapods dependency is doing the magic
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         
         // Manually added in order to get back by default, should be setting titleLabel as UILabel instead CLTypingLabel (cocoapods dependency)
         /*
