@@ -19,6 +19,7 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		35B8293C36CA258EC9131930 /* Pods_Flash_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806A9FCEFDED19B5902E0F40 /* Pods_Flash_Chat.framework */; };
 		3F1960E12AAE94D500DE7FFE /* Flash Chat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 3F1960E02AAE94D500DE7FFE /* Flash Chat.xcworkspace */; };
+		3F90E09B2AB13B3200C8D9C4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90E09A2AB13B3200C8D9C4 /* Message.swift */; };
 		3F9C03FE2AAFE194004BCDC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9C03FD2AAFE194004BCDC9 /* GoogleService-Info.plist */; };
 		3FF030FD2AB1330C0030BCD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF030FC2AB1330C0030BCD4 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F1960E02AAE94D500DE7FFE /* Flash Chat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "Flash Chat.xcworkspace"; sourceTree = "<group>"; };
+		3F90E09A2AB13B3200C8D9C4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat/Message.swift"; sourceTree = SOURCE_ROOT; };
 		3F9C03FD2AAFE194004BCDC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FF030FC2AB1330C0030BCD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		806A9FCEFDED19B5902E0F40 /* Pods_Flash_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F90E09A2AB13B3200C8D9C4 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				3FF030FD2AB1330C0030BCD4 /* Constants.swift in Sources */,
+				3F90E09B2AB13B3200C8D9C4 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 			);
