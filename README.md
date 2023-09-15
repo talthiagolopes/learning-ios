@@ -1,13 +1,21 @@
 # Learning iOS
 I am learning iOS folks =)
 
-Course references: 
+There are some references below that were provided to start the projects in order to help the students to be focused on the specific topics.
+
+Please, be free to take a look at the implementations that I have been done based on these projects.
+
+There are some Swift deep dive that could be useful, click [here](swift-deep-dive) or go to the swift-deep-dive directory
+
+If you are interesting in make some suggestion or also an implementation, it's super welcome ❤️ I will really appreciate.
+
+## Course references
 
 Udemy: https://www.udemy.com/course/ios-13-app-development-bootcamp/
 
 App Brewery: https://www.appbrewery.co/p/ios-course-resources/
 
-Repository references:
+## Repository references
 
 Dicee: https://github.com/appbrewery/Dicee-iOS13.git
 
