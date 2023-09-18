@@ -19,7 +19,7 @@ struct K {
         static let lighBlue = "BrandLightBlue"
     }
     
-    struct FStore {
+    struct FirebaseStore {
         static let collectionName = "messages"
         static let senderField = "sender"
         static let bodyField = "body"
