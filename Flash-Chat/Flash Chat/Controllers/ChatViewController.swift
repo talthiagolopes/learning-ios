@@ -16,6 +16,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
+    
     let db = Firestore.firestore()
     
     var messages: [Message] = []
@@ -48,6 +49,10 @@ class ChatViewController: UIViewController {
                 }
                 else {
                     print("Successfully saved data!")
+                    
+                    DispatchQueue.main.async {
+                        self.messageTextfield.text = ""
+                    }
                 }
             }
         }
@@ -84,6 +89,9 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -103,11 +111,30 @@ extension ChatViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-    
-        cell.messageLabel?.text = messages[indexPath.row].body
         
+        let message = messages[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        
+        cell.messageLabel?.text = message.body
+    
+        //Check if a message is from the current user
+        if message.sender == Auth.auth().currentUser?.email {
+            setMessageConfiguration(cell, letfImageIsHidden: false, rightImageIsHidden: true, backgroundColor: K.BrandColors.lightPurple, textColor: K.BrandColors.purple)
+        }
+        else {
+            setMessageConfiguration(cell, letfImageIsHidden: true, rightImageIsHidden: false, backgroundColor: K.BrandColors.purple, textColor: K.BrandColors.lightPurple)
+        }
+
         return cell
+    }
+    
+    func setMessageConfiguration(_ cell: MessageCell, letfImageIsHidden: Bool, rightImageIsHidden: Bool, backgroundColor: String, textColor: String) {
+        
+        cell.leftImageView.isHidden =  letfImageIsHidden
+        cell.rightImageView.isHidden = rightImageIsHidden
+        cell.messageBubble.backgroundColor = UIColor(named: backgroundColor)
+        cell.messageLabel.textColor = UIColor(named: textColor)
     }
 }
 
