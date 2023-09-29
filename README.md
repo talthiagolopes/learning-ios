@@ -7,7 +7,7 @@ Please, be free to take a look at the implementations that I have been done base
 
 There are some Swift deep dive that could be useful, click [here](swift-deep-dive) or go to the swift-deep-dive directory
 
-If you are interesting in make some suggestion or also an implementation, it's super welcome ❤️ I will really appreciate.
+If you are interested in making some suggestions or also an implementation, it is super welcome ❤️ I will really appreciate it.
 
 ## Course references
 
