@@ -13,3 +13,5 @@ The idea is keep learning more and more with specific courses after get this cur
 I Am Rich: https://github.com/appbrewery/I-Am-Rich-iOS13-SwiftUI-Completed
 
 MiCard: https://github.com/appbrewery/MiCard-iOS13-SwiftUI-Completed
+
+Dicee: https://github.com/appbrewery/Dicee-iOS13-SwiftUI-Completed
