@@ -6,3 +6,6 @@ The second one is about the `@State`, it is a property wrapper type that can rea
 
 State documentation: https://developer.apple.com/documentation/swiftui/state  
 
+<img width="373" alt="image" src="https://github.com/talthiagolopes/learning-ios/assets/39767279/ae97e8c8-1aac-47e4-806c-685ffd8ad086">
+
+Referece image: https://developer.apple.com/documentation/swiftui/managing-user-interface-state
