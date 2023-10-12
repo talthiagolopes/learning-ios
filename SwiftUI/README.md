@@ -15,3 +15,5 @@ I Am Rich: https://github.com/appbrewery/I-Am-Rich-iOS13-SwiftUI-Completed
 MiCard: https://github.com/appbrewery/MiCard-iOS13-SwiftUI-Completed
 
 Dicee: https://github.com/appbrewery/Dicee-iOS13-SwiftUI-Completed
+
+H4X0R-News: https://github.com/appbrewery/H4X0R-News-iOS13-SwiftUI-Completed
