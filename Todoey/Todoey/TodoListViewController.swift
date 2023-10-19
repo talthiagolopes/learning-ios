@@ -11,10 +11,18 @@ import UIKit
 class TodoListViewController: UITableViewController {
     
     var array = ["Bla", "Ble", "Bli"]
+    
+    let TodoListArrayKey = "TodoListArray"
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        if let userDefaultsItems = self.defaults.array(forKey: self.TodoListArrayKey) as? [String] {
+            self.array = userDefaultsItems;
+        }
     }
 
     //MARK: - TableView Datasource Methods
@@ -58,6 +66,8 @@ class TodoListViewController: UITableViewController {
             print("It's gonna be trigger on Plus button click")
             
             self.array.append(textField.text!)
+            
+            self.defaults.set(self.array, forKey: self.TodoListArrayKey)
             
             self.tableView.reloadData()
         }
