@@ -18,7 +18,7 @@ defaults.set(6.5,  forKey:  "RadomFloat")
 defaults.set(["name":  "Thiago",  "age":  "32"],  forKey:  "RandomDictionary")
 defaults.set(["Bla",  "Ble",  "Bli"],  forKey:  "RandomArray")
 
-# Retrive
+# Retrieve
 let  randomString  =  defaults.string(forKey:  "RandomString") # "Savings"
 let  randomFloat  =  defaults.float(forKey:  "RadomFloat") # 6.5
 let  randomDictionary  =  defaults.dictionary(forKey:  "RandomDictionary") # Dictionary of 2 (String, Any) elements
