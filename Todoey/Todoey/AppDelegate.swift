@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Print data defaults save path
         // e.g: /Users/tal/Library/Developer/CoreSimulator/Devices/981EBC5B-17B5-41A2-BAD0-7E5EAE57F153/data/Containers/Data/Application/8317C73B-0C6E-40FF-AFD7-FC7B5EB893B7/Documents
-        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true))
+        
+        
+        // print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true))
         
         return true
     }
