@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Item : Encodable {
+class Item : Codable {
     
     init(title: String, selected: Bool) {
         self.title = title
