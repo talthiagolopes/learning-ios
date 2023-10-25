@@ -7,34 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class TodoListViewController: UITableViewController {
     
     var array = [Item]()
-    
-    let TodoListArrayKey = "TodoListArray"
-    
-    //let defaults = UserDefaults.standard
-    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
+
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        print(dataFilePath!)
-        // print data file path Users/tal/Library/Developer/CoreSimulator/Devices/981EBC5B-17B5-41A2-BAD0-7E5EAE57F153/data/Containers/Data/Application/3E4F3A8E-7A2E-4754-8E37-4324D0A2AD8E/Documents/Items.plist
-        
-        let bla = Item(title: "bla", selected: false)
-        let ble = Item(title: "ble", selected: false)
-        let bli = Item(title: "bli", selected: false)
-        
-        array.append(bla)
-        array.append(ble)
-        array.append(bli)
-        
-//        if let userDefaultsItems = self.defaults.array(forKey: self.TodoListArrayKey) as? [Item] {
-//            self.array = userDefaultsItems;
-//        }
     }
     
     //MARK: - TableView Datasource Methods
@@ -78,7 +61,9 @@ class TodoListViewController: UITableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             print("It's gonna be trigger on Plus button click")
             
-            let item = Item(title: textField.text!, selected: false)
+            let item = Item(context: self.context)
+            item.title = textField.text!
+            item.selected = false
             
             self.array.append(item)
             
@@ -98,12 +83,8 @@ class TodoListViewController: UITableViewController {
     
     //MARK: - Save items
     fileprivate func saveItems() {
-        //self.defaults.set(self.array, forKey: self.TodoListArrayKey)
-        let encoder = PropertyListEncoder()
-        
         do {
-            let data = try encoder.encode(array)
-            try data.write(to: dataFilePath!)
+            try context.save()
         } catch {
             print("Error encoding data array \(error)")
         }
