@@ -24,13 +24,7 @@ class TodoListViewController: UITableViewController {
         print(dataFilePath!)
         // print data file path Users/tal/Library/Developer/CoreSimulator/Devices/981EBC5B-17B5-41A2-BAD0-7E5EAE57F153/data/Containers/Data/Application/3E4F3A8E-7A2E-4754-8E37-4324D0A2AD8E/Documents/Items.plist
         
-        let bla = Item(title: "bla", selected: false)
-        let ble = Item(title: "ble", selected: false)
-        let bli = Item(title: "bli", selected: false)
-        
-        array.append(bla)
-        array.append(ble)
-        array.append(bli)
+        loadInitialItems()
         
 //        if let userDefaultsItems = self.defaults.array(forKey: self.TodoListArrayKey) as? [Item] {
 //            self.array = userDefaultsItems;
@@ -111,7 +105,32 @@ class TodoListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
+    func loadItems() {
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                array = try decoder.decode([Item].self, from: data)
+            }
+            catch {
+                print("Error dencoding data array \(error)")
+            }
+        }
+    }
     
-    
+    func loadInitialItems() {
+        
+        loadItems()
+        
+        if array.isEmpty {
+            
+            let bla = Item(title: "bla", selected: false)
+            let ble = Item(title: "ble", selected: false)
+            let bli = Item(title: "bli", selected: false)
+            
+            array.append(bla)
+            array.append(ble)
+            array.append(bli)
+        }
+    }
 }
 
