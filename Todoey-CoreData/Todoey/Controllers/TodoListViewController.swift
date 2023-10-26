@@ -12,12 +12,14 @@ import CoreData
 class TodoListViewController: UITableViewController {
     
     var array = [Item]()
-
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        loadItems()
     }
     
     //MARK: - TableView Datasource Methods
@@ -51,7 +53,7 @@ class TodoListViewController: UITableViewController {
     }
     
     //MARK: - Add New Items Popup
-
+    
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
@@ -86,13 +88,22 @@ class TodoListViewController: UITableViewController {
         do {
             try context.save()
         } catch {
-            print("Error encoding data array \(error)")
+            print("Error saving data from context \(error)")
         }
         
         self.tableView.reloadData()
     }
     
-    
-    
+    func loadItems() {
+
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        
+        do {
+            array = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+    }
+
 }
 
