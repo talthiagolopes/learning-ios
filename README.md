@@ -5,7 +5,9 @@ There are some references below that were provided to start the projects in orde
 
 Please, be free to take a look at the implementations that I have been done based on these projects.
 
-There are some Swift deep dive that could be useful, click [here](swift-deep-dive) or go to the swift-deep-dive directory
+There are also some Swift deep dive that could be useful, click [here](swift-deep-dive) or go to the swift-deep-dive directory.
+
+Are you looking for some Swift UI projects? It is possible to find [here](SwiftUI) or go to the SwiftUI directory.
 
 If you are interested in making some suggestions or also an implementation, it is super welcome ❤️ I will really appreciate it.
 
@@ -42,3 +44,5 @@ Clima: https://github.com/appbrewery/Clima-iOS13.git
 ByteCoin: https://github.com/appbrewery/ByteCoin-iOS13
 
 Flash-Chat: https://github.com/appbrewery/Flash-Chat-iOS13.git
+
+Todoey-CoreData: https://github.com/appbrewery/Todoey-CoreData-iOS13-Completed
