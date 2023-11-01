@@ -42,3 +42,5 @@ Clima: https://github.com/appbrewery/Clima-iOS13.git
 ByteCoin: https://github.com/appbrewery/ByteCoin-iOS13
 
 Flash-Chat: https://github.com/appbrewery/Flash-Chat-iOS13.git
+
+Todoey-CoreData: https://github.com/appbrewery/Todoey-CoreData-iOS13-Completed
