@@ -16,11 +16,10 @@ class CategoryViewController: SwipeTableViewController {
     
     var categories: Results<Category>?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = 80.8
-        
+
         loadCategories()
     }
     

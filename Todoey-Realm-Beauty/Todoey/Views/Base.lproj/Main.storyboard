@@ -25,7 +25,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="K5X-MI-0HF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="K5X-MI-0HF" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K5X-MI-0HF" id="GQH-s8-Xh9">
@@ -39,7 +39,7 @@
                             <outlet property="delegate" destination="86z-rt-84M" id="R4I-Xo-fdz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="hAr-pb-Knd">
+                    <navigationItem key="navigationItem" title="Items" id="hAr-pb-Knd" colorLabel="IBBuiltInLabel-Gray">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="M2d-5t-OZS">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
