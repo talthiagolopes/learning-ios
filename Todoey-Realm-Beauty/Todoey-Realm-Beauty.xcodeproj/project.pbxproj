@@ -11,7 +11,7 @@
 		3F96CD252AF21017001A43AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96CD242AF21017001A43AB /* Category.swift */; };
 		3F96CD272AF2102B001A43AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96CD262AF2102B001A43AB /* Item.swift */; };
 		3FFF85EA2AF492010019C048 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF85E92AF492010019C048 /* SwipeTableViewController.swift */; };
-		570F5DFE5F24F6EBAEE16483 /* Pods_Todoey_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707B03C90DE3F111D477A140 /* Pods_Todoey_Realm.framework */; };
+		C6AE0DC1E6F5D09DB108EAB8 /* Pods_Todoey_Realm_Beauty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687927C3D354C0F7A4D8DE9C /* Pods_Todoey_Realm_Beauty.framework */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */; };
 		EB2BE501239524DB00FB933B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE4FF239524DB00FB933B /* Main.storyboard */; };
@@ -24,7 +24,9 @@
 		3F96CD242AF21017001A43AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		3F96CD262AF2102B001A43AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3FFF85E92AF492010019C048 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
-		707B03C90DE3F111D477A140 /* Pods_Todoey_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4703AFF87A7E7A8C27383E45 /* Pods-Todoey-Realm-Beauty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey-Realm-Beauty.debug.xcconfig"; path = "Target Support Files/Pods-Todoey-Realm-Beauty/Pods-Todoey-Realm-Beauty.debug.xcconfig"; sourceTree = "<group>"; };
+		687927C3D354C0F7A4D8DE9C /* Pods_Todoey_Realm_Beauty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey_Realm_Beauty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57784780123F9ADF94B6148 /* Pods-Todoey-Realm-Beauty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey-Realm-Beauty.release.xcconfig"; path = "Target Support Files/Pods-Todoey-Realm-Beauty/Pods-Todoey-Realm-Beauty.release.xcconfig"; sourceTree = "<group>"; };
 		D22AC29E71317652BD95E883 /* Pods-Todoey-Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey-Realm.release.xcconfig"; path = "Target Support Files/Pods-Todoey-Realm/Pods-Todoey-Realm.release.xcconfig"; sourceTree = "<group>"; };
 		EB2BE4F6239524DB00FB933B /* Todoey-Realm-Beauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todoey-Realm-Beauty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570F5DFE5F24F6EBAEE16483 /* Pods_Todoey_Realm.framework in Frameworks */,
+				C6AE0DC1E6F5D09DB108EAB8 /* Pods_Todoey_Realm_Beauty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,7 @@
 		D3271CD67D1E2F03B7A87B25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				707B03C90DE3F111D477A140 /* Pods_Todoey_Realm.framework */,
+				687927C3D354C0F7A4D8DE9C /* Pods_Todoey_Realm_Beauty.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +122,8 @@
 			children = (
 				F0216299C673FEC66034406E /* Pods-Todoey-Realm.debug.xcconfig */,
 				D22AC29E71317652BD95E883 /* Pods-Todoey-Realm.release.xcconfig */,
+				4703AFF87A7E7A8C27383E45 /* Pods-Todoey-Realm-Beauty.debug.xcconfig */,
+				C57784780123F9ADF94B6148 /* Pods-Todoey-Realm-Beauty.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -209,7 +213,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Todoey-Realm-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Todoey-Realm-Beauty-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -222,15 +226,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm/Pods-Todoey-Realm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm-Beauty/Pods-Todoey-Realm-Beauty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm/Pods-Todoey-Realm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm-Beauty/Pods-Todoey-Realm-Beauty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm/Pods-Todoey-Realm-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todoey-Realm-Beauty/Pods-Todoey-Realm-Beauty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,7 +395,7 @@
 		};
 		EB2BE50B239524DC00FB933B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0216299C673FEC66034406E /* Pods-Todoey-Realm.debug.xcconfig */;
+			baseConfigurationReference = 4703AFF87A7E7A8C27383E45 /* Pods-Todoey-Realm-Beauty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,7 +415,7 @@
 		};
 		EB2BE50C239524DC00FB933B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D22AC29E71317652BD95E883 /* Pods-Todoey-Realm.release.xcconfig */;
+			baseConfigurationReference = C57784780123F9ADF94B6148 /* Pods-Todoey-Realm-Beauty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

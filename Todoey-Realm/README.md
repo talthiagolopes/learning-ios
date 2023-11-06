@@ -1,13 +1,13 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
-# Todoey Core Data ✓
+# Todoey Realm ✓
 
 ## Our Goal
 
 The objective of this tutorial is to understand how to save data in iOS. We'll look at various choices and learn to use UserDefaults, Core Data and Realm.
 
-### Splitting the goal up - Realm
+### Splitting the goal up
 I have decided splitting it up in order to be easier review the implementation that has been improved. In this one is possible to check the Realm solution.
 
 Why Use Realm? https://realm.io

@@ -7,4 +7,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Todoey-Realm-Beauty.xcodeproj">
+   </FileRef>
 </Workspace>

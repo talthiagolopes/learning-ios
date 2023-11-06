@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Todoey_RealmVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Todoey_RealmVersionString[];
+FOUNDATION_EXPORT double Pods_Todoey_Realm_BeautyVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Todoey_Realm_BeautyVersionString[];
 

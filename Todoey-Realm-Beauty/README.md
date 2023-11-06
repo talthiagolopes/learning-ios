@@ -1,22 +1,20 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
-# Todoey Core Data ✓
+# Todoey Realm + Beauty layout ✓
 
 ## Our Goal
 
 The objective of this tutorial is to understand how to save data in iOS. We'll look at various choices and learn to use UserDefaults, Core Data and Realm.
 
-### Splitting the goal up - Realm
-I have decided splitting it up in order to be easier review the implementation that has been improved. In this one is possible to check the Realm solution.
+### Splitting the goal up
+I have decided splitting it up in order to be easier review the implementation that has been improved. In this one is possible to check the Realm with beauty layout solution.
 
-Why Use Realm? https://realm.io
+SwipeCellKit: https://cocoapods.org/pods/SwipeCellKit
 
-Install Realm for iOS stuffs: https://www.mongodb.com/docs/realm/sdk/swift/install/#std-label-ios-install
+Chameleon: https://github.com/vicc/chameleon#random-colors
 
-NSPredicate Cheatsheet: https://academy.realm.io/posts/nspredicate-cheatsheet/
-
-Realm Studio: https://docs.realm.io/sync/realm-studio
+Customize the appearance of a navigation bar: https://github.com/vicc/chameleon#random-colors
 
 
 ## What you will create
