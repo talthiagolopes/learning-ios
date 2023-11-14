@@ -50,11 +50,11 @@ class AnotherClassInTheSameFile {
         
         print("Init AnotherClassInTheSameFile")
         
-        //Step 5. Try to print aPrivateProperty Here - Impossible: Cannot find 'aPrivateProperty' in scope
-        //print("\(aPrivateProperty) printed from init method in AnotherClassInTheSameFile")
+        //Step 5. Try to print aPrivateProperty Here - Impossible: 'aPrivateProperty' is inaccessible due to 'private' protection level
+        //print("\(AFile().aPrivateProperty) printed from init method in AnotherClassInTheSameFile")
         
-        //Step 7. Try to print aFilePrivateProperty Here - Impossible: Cannot find 'aFilePrivateProperty' in scope
-        //print("\(aFilePrivateProperty) printed from init method in AnotherClassInTheSameFile")
+        //Step 7. Try to print aFilePrivateProperty Here - Possible
+        //print("\(AFile().aFilePrivateProperty) printed from init method in AnotherClassInTheSameFile")
         
     }
 }

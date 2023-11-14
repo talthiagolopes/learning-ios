@@ -69,15 +69,13 @@ class AFile {
 class AnotherClassInTheSameFile {
     
     init() {
-        
         print("Init AnotherClassInTheSameFile")
         
-        # Step 5. Try to print aPrivateProperty Here - Impossible: Cannot find 'aPrivateProperty' in scope
-        //print("\(aPrivateProperty) printed from init method in AnotherClassInTheSameFile")
+        # Step 5. Try to print aPrivateProperty Here - Impossible: 'aPrivateProperty' is inaccessible due to 'private' protection level
+        //print("\(AFile().aPrivateProperty) printed from init method in AnotherClassInTheSameFile")
         
-        # Step 7. Try to print aFilePrivateProperty Here - Impossible: Cannot find 'aFilePrivateProperty' in scope
-        //print("\(aFilePrivateProperty) printed from init method in AnotherClassInTheSameFile")
-        
+        # Step 7. Try to print aFilePrivateProperty Here - Possible
+        //print("\(AFile().aFilePrivateProperty) printed from init method in AnotherClassInTheSameFile")
     }
 }
 
@@ -85,20 +83,18 @@ class AnotherClassInTheSameFile {
 
 ## B class
 The B class has the responsability to access step by step of variable levels with the status if is possible or not, and why not
-
+g
 ```bash
 import Foundation
 
 class BFile {
     
     init() {
+        # Step 8. Try to print aFilePrivateProperty Here - Impossible:'aFilePrivateProperty' is inaccessible due to 'fileprivate' protection level
+        //print("\(AFile().aFilePrivateProperty) printed from init method in BFile")
         
-        # Step 8. Try to print aFilePrivateProperty Here - Impossible: Cannot find 'aFilePrivateProperty' in scope
-        //print("\(aFilePrivateProperty) printed from init method in BFile")
-        
-        # Step 10. Try to print anInternalProperty Heres - Impossible: Cannot find 'anInternalProperty' in scope
-        //print("\(anInternalProperty) printed from init method in BFile")
-        
+        # Step 10. Try to print anInternalProperty Heres - Possible
+        //print("\(AFile().anInternalProperty) printed from init method in BFile")
     }
     
 }

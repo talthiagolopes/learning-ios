@@ -11,11 +11,11 @@ class BFile {
     
     init() {
         
-        //Step 8. Try to print aFilePrivateProperty Here - Impossible: Cannot find 'aFilePrivateProperty' in scope
-        //print("\(aFilePrivateProperty) printed from init method in BFile")
+        //Step 8. Try to print aFilePrivateProperty Here - Impossible:'aFilePrivateProperty' is inaccessible due to 'fileprivate' protection level
+        //print("\(AFile().aFilePrivateProperty) printed from init method in BFile")
         
-        //Step 10. Try to print anInternalProperty Heres - Impossible: Cannot find 'anInternalProperty' in scope
-        //print("\(anInternalProperty) printed from init method in BFile")
+        //Step 10. Try to print anInternalProperty Heres - Possible
+        //print("\(AFile().anInternalProperty) printed from init method in BFile")
         
     }
     
